@@ -3,10 +3,12 @@
 #include <stdio.h>
 
 /**
- * main - Determines if a number is positive, negative or zero.
- * for numbers > zero, n is positive
- * Return: Always 0 (Success)
- */
+* main - assigns a random number to int n
+* for numbers > zero, n is positive
+* for numbers < zero, n is negative
+* for numbers == 0 n is zero
+* Return: Always 0 (success)
+*/
 int main(void)
 {
 	int n;
@@ -15,15 +17,13 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is positive\n", n);
+	printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero\n", n);
+	printf("%d is zero\n", n);
 	}
 	else
-	{
-		printf("%d is negative\n", n);
-	}
+	printf("%d is negative\n", n);
 	return (0);
 }
